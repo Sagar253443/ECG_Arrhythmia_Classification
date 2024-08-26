@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<style>
+body {
+    background-image: url("../static/background2.jpg");
+    background-size: cover;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pd {
+    padding-bottom: 100%;
+}
+
+.navbar {
+    margin: 0px;
+    padding: 10px;
+    background-color: black;
+    opacity: 0.8; /* Increased opacity */
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    border-radius: 15px;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow */
+}
+
+a {
+    color: white;
+    float: right;
+    text-decoration: none;
+    font-style: normal;
+    padding-right: 20px;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+p {
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.flex-item {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Comic Sans MS';
+    font-size: 40px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/upload">Predict</a>
+        <a href="/info">Info</a>
+        <a href="/about">Home</a>
+        <br>
+    </div>
+    <br>
+    <div class="container">
+        <h1>ECG Arrhythmia Classification Using CNN</h1>
+        <p>According to the World Health Organization (WHO), cardiovascular diseases (CVDs) are the
+        number one cause of death today. Over 17.7 million people died from CVDs in the year 2017
+        all over the world which is about 31% of all deaths, and over 75% of these deaths occur in
+        low and middle income countries. Arrhythmia is a representative type of CVD that refers to
+        any irregular change from the normal heart rhythms. There are several types of arrhythmia
+        including:</p>
+        <div class="flex-container">
+            <div class="row">
+                <div class="flex-item">
+                    <img src="../static/vf_img.jpg" title="Ventricular Fibrillation" />
+                    <p>Ventricular Fibrillation</p>
+                </div>
+                <div class="flex-item">
+                    <img src="../static/pac_img.jpg" title="Premature Atrial Contraction" />
+                    <p>Premature Atrial Contraction</p>
+                </div>
+                <div class="flex-item">
+                    <img src="../static/pvc_img.jpg" title="Premature Ventricular Contraction" />
+                    <p>Premature Ventricular Contraction</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="flex-item">
+                    <img src="../static/rbbb_img.jpg" title="Right Bundle Branch Block" />
+                    <p>Right Bundle Branch Block</p>
+                </div>
+                <div class="flex-item">
+                    <img src="../static/lbbb_img.jpg" title="Left Bundle Branch Block" />
+                    <p>Left Bundle Branch Block</p>
+                </div>
+            </div>
+        </div>
+        <p>Although single arrhythmia heartbeat may not have a serious impact on life, continuous
+        arrhythmia beats can result in fatal circumstances. Electrocardiogram (ECG) is a non-invasive medical tool that displays the rhythm and status
+        of the heart. Therefore, automatic detection of irregular heart rhythms from ECG signals is a
+        significant task in the field of cardiology.</p>
+        <p>The prevalence and mortality rates of cardiovascular disease (CVD) continue to rise. As a result, 
+        frequent cardiac rhythm monitoring has become an increasingly critical and vital aspect of managing and preventing CVDs. 
+        The automatic diagnosis of cardiac illness relies heavily on the classification of electrocardiogram signals. 
+        A stroke can result in brain damage and necessitates immediate medical attention. To diagnose an arrhythmia, 
+        a doctor must first recognize the abnormal heartbeat and attempt to determine its cause or trigger. 
+        Thanks to the development of artificial intelligence and Science that has enabled us to predict the cases of arrhythmia far better 
+        than doctors by the use of Convolutional Neural Networks. 
+        We in this project aim to diagnose the type of arrhythmias by the spectrograms of numerical data of the ECG images.</p>
+    </div>
+</body>
+</html>
